@@ -18,10 +18,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: "https://mern-auth-frontend-4c9m.onrender.com",
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"], // Ensure required methods are allowed
-    allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
   })
 );
 
