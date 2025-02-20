@@ -43,7 +43,7 @@ export const register = async (req, res) => {
     };
 
     try {
-      const info = await transporter.sendMail(mailOptions);
+      const info = await transporter.sendMail(mailOption);
       console.log("Email sent:", info.response);
     } catch (error) {
       console.error("Email error:", error);
@@ -144,7 +144,7 @@ export const sendVerifyOtp = async (req, res) => {
     };
 
     try {
-      const info = await transporter.sendMail(mailOptions);
+      const info = await transporter.sendMail(mailOption);
       console.log("Email sent:", info.response);
     } catch (error) {
       console.error("Email error:", error);
@@ -234,7 +234,7 @@ export const sendResetOtp = async (req, res) => {
     };
 
     try {
-      const info = await transporter.sendMail(mailOptions);
+      const info = await transporter.sendMail(mailOption);
       console.log("Email sent:", info.response);
     } catch (error) {
       console.error("Email error:", error);
